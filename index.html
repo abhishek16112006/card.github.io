@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.ico">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
- 
+
     <title>myAadhaar - Unique Identification Authority of India | Government of India</title>
     <style>
         body{
@@ -14,6 +14,9 @@
 
     justify-content: space-around;
     flex-wrap: wrap;
+ display: flex;
+    flex-direction: column;
+    align-items: center;
         }
         .box{
     display: flex;
@@ -22,14 +25,9 @@
     text-align: center;
     padding: 20px 0px 15px;
     margin: 5px;
-    
-    
-}
-.box-img {
-    width: 100%;
-    height: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    overflow: hidden;
+
+
 }
 .box-content {
     background-color: #fff;
@@ -45,6 +43,12 @@
     flex-wrap: wrap;
     text-align: center;
 }
+.box-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 h3{
     justify-content: space-around;
     flex-wrap: wrap;
@@ -52,13 +56,14 @@ h3{
 }
 
 .header{
-    background: linear-gradient(to bottom right, rgb(37, 95, 187) 50%, rgb(28, 28, 196) 50%);
+    background: linear-gradient(to right, skyblue, blue, blue;
 
     color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+width: 100%;
+    padding: 10px;
 
 }
 
@@ -119,11 +124,17 @@ h3{
     background-color: blue;
 
 }
-.myAadhaar img{
-    padding: 3px 3px 3px 3px;
-}
 i {
     font-size: 2rem;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+img {
+    max-width: 100%;
+    height: auto;
 }
     </style>
 </head>
@@ -148,16 +159,17 @@ i {
                                 </li>
                                 </ul>
                                </nav>
-                        
-                
+
+
         </header>
          <div class="myAadhaar">
-                        <img src="Aadhar-Color.svg" alt="UIDAI Logo" height="20px"><span>myAadhaar</span>
+                        <span>myAadhaar ☑</span>
                         </div>
     <div>
             <div class="box">
                 <div class="box-content" data-name="bags">
-                    <img src="adhar.png" alt="image 1">    
+                    <img src="https://github.com/user-attachments/assets/01c9788a-8fd8-4fe6-9dbb-691d7e253cf3" alt="image 1">
+    <img src="https://github.com/user-attachments/assets/e62f4d18-5eeb-45c1-99d0-9dab85d35d28" alt="image 1">    
                 </div>    
             </div>
 </body>
